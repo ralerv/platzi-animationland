@@ -9,3 +9,106 @@ input:checked{
 .total-count::after{
     content: counter(game);
 }
+
+.phone{
+    position: relative;
+    border: 9px solid black;
+    border-radius: 40px;
+    height: 600px;
+    width: 300px;
+    background: #ccefff;
+    box-shadow: 0 19px 38px rgb(0, 0, 0,0.30), 
+    0 15px 12px rgb(0, 0, 0,0.22);    
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+}
+
+.layer-bunny{
+    height: 450px;
+    width: 80px;
+    background: white;
+}
+
+.layer-1{
+    z-index: 1;
+    right: 60px;
+}
+
+.layer-2{
+    z-index: 2;
+    left: 60px;
+}
+
+.layer-3{
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 400px;
+    background: pink;
+}
+
+.layer-4{
+    z-index: 4;
+    height: 360px;
+    width: 80px;
+    background: white;
+    left: 50px;
+}
+
+.layer-5{
+    z-index: 5;
+    left: 0;
+    width: 220px;
+    height: 290px;
+    background: rgb(171, 171, 171);
+    border-bottom-left-radius: 30px;
+}
+
+.layer-6{
+    z-index: 6;
+    height: 230px;
+    width: 80px;
+    background: white;
+    right: 40px;
+}
+
+.layer-7{
+    z-index: 7;
+    right: 0;
+    width: 170px;
+    height: 180px;
+    background: pink;
+    border-bottom-right-radius: 30px;
+}
+
+.layer-8{
+    z-index: 8;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 170px;
+    height: 90px;
+    background: rgb(0, 21, 255);
+}
+
+.layer-9{
+    z-index: 9;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    border-bottom-left-radius: 30px;
+}
+.layer-10{
+    z-index: 10;
+    right: 0;
+    width: 100px;
+    height: 70px;
+    background: rgb(105, 105, 105);
+    border-bottom-right-radius: 30px;
+}
