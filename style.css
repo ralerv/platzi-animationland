@@ -176,6 +176,9 @@ input:checked{
     right: 0;
     left: 0;
     top: 14px;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .head__eye--right{
@@ -204,4 +207,19 @@ input:checked{
 
 .layer-roof--floor-sm{
     height: 50%;
+}
+
+@keyframes blink{
+    0%{
+        aspect-ratio: 1/1;
+        top: 14px;
+    }
+    5%{
+        aspect-ratio: 4/1;
+        top: 18px;
+    }
+    10%{
+        aspect-ratio: 1/1;
+        top: 14px;
+    }
 }
