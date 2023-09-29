@@ -56,16 +56,23 @@ h2{
 .layer-bunny{
     height: 450px;
     width: 80px;
+    animation-name: bunny;
+    animation-iteration-count: infinite;
 }
 
 .layer-1{
     z-index: 1;
     right: 60px;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
 }
 
 .layer-2{
     z-index: 2;
     left: 60px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
 }
 
 .layer-3{
@@ -83,6 +90,8 @@ h2{
     height: 340px;
     width: 80px;
     left: 50px;
+    animation-duration: 1.2s;
+    animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .layer-5{
@@ -99,6 +108,9 @@ h2{
     height: 230px;
     width: 80px;
     right: 40px;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation-direction: alternate;
 }
 
 .layer-7{
@@ -235,6 +247,19 @@ h2{
 
 .layer-roof--floor-sm{
     height: 50%;
+}
+
+@keyframes bunny {
+    0%{
+        bottom: 0;
+    }
+    30%{
+        bottom: -80px;
+    }
+    100%{
+        bottom: 0;
+
+    }
 }
 
 @keyframes blink{
