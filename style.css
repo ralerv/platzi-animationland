@@ -33,6 +33,19 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 
+h3,h2{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: cadetblue;
+}
+
+h3{
+    margin-top: 8px;
+}
+
+h2{
+    margin-bottom: 4px;
+}
 
 
 .layer {
